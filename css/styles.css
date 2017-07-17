@@ -1,0 +1,12 @@
+#show-todoList{
+  display: none;
+}
+
+.fakeLink {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.fakeLink:hover {
+  text-decoration: underline;
+}

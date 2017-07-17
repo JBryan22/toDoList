@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>To do list</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Your todo list:</h2>
+          <form id="new-task">
+            <div class="form-group">
+              <label for="new-task-name">New task:</label>
+              <input type="text" class="form-control" id="new-task-name">
+            </div>
+            <div class="form-group">
+              <label for="when">When:</label>
+              <input type="date" class="form-control" id="when">
+            </div>
+            <div class="form-group">
+              <label for="description">Description:</label>
+              <input type="text" class="form-control" id="description">
+            </div>
+            <div class="form-group">
+              <label for="task-priority">Priority:</label>
+              <input type="text" class="form-control" id="task-priority">
+            </div>
+
+            <button type="submit" class="btn">Add</button>
+          </form>
+
+          <h2>Your todo list:</h2>
+          <ul id="todoList">
+
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <div id="show-todoList">
+            <h2></h2>
+
+            <p>Task Name: <span class="new-task-name"></span></p>
+            <p>When: <span class="when"></span></p>
+            <p>Description: <span class="description"></span></p>
+            <p>Priority: <span class="task-priority"></span></p>
+            <button class="btn btn-danger" id="delete">Delete This Item</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
